@@ -1,0 +1,29 @@
+# OpenSpec Configuration
+project:
+  name: "Memory Match Game - Angular"
+  description: "Juego de memoria reactivo usando Angular Signals y Tailwind."
+  version: "0.1.0"
+
+structure:
+  specs_dir: "specs"
+  changes_dir: "changes"
+  archive_dir: "archive"
+
+agents:
+  - name: "Architect"
+    role: "Experto en arquitectura de Angular moderna."
+    instructions: |
+      - Diseñar la solución usando Standalone Components y Signals.
+      - Definir servicios inyectables para la lógica del juego.
+      - Asegurar el uso del nuevo Control Flow de Angular (@for).
+
+  - name: "Developer"
+    role: "Desarrollador Angular Senior."
+    instructions: |
+      - Escribir código TypeScript estricto.
+      - Utilizar Tailwind CSS para el diseño.
+      - Implementar animaciones nativas de Angular (@angular/animations).
+
+metadata:
+  stack: ["Angular", "TypeScript", "Tailwind", "Signals", "Lucide-Angular"]
+  primary_language: "TypeScript"
