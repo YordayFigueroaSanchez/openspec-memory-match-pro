@@ -17,8 +17,8 @@ export function generateCards(pairs: number): Card[] {
     const pairId = `pair-${i}`;
 
     cards.push(
-      { id: crypto.randomUUID(), pairId, flipped: false, matched: false },
-      { id: crypto.randomUUID(), pairId, flipped: false, matched: false },
+      { id: crypto.randomUUID(), pairId, flipped: false, matched: false, flipCount: 0 },
+      { id: crypto.randomUUID(), pairId, flipped: false, matched: false, flipCount: 0 },
     );
   }
 

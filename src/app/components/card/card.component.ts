@@ -16,7 +16,10 @@ import { Card } from '../../models';
       (click)="flip.emit(card.id)"
     >
       @if (card.flipped || card.matched) {
-        <span>{{ card.pairId }}</span>
+        <div class="flex flex-col items-center">
+          <span>{{ card.pairId }}</span>
+          <span class="text-xs text-slate-400">{{ card.flipCount }}</span>
+        </div>
       } @else {
         <span class="text-2xl">?</span>
       }

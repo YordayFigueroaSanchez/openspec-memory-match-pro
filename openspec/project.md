@@ -21,6 +21,7 @@ Aplicación web del juego de memoria n x n, enfocada en la reactividad y rendimi
 - **Sistema de Bloqueo:** Mientras se validan dos cartas, el tablero no debe permitir más clics.
 - **Contadores:** Registro de "Movimientos" (pares intentados) y "Tiempo de juego".
 - **Condición de Victoria:** Se activa cuando todas las cartas tienen el estado `matched`.
+- **Contador por Carta:** Registro obligatorio de `flipCount` por cada instancia de carta.
 
 ## 4. Architecture & Design Principles
 - **Signals-First:** Utilizar `signal`, `computed` y `effect` para el manejo del estado del juego.

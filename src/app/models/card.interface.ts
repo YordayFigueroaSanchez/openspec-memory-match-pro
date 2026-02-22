@@ -10,4 +10,7 @@ export interface Card {
 
   /** true cuando la carta ya fue emparejada exitosamente y permanece visible. */
   matched: boolean;
+
+  /** Número de veces que esta carta ha sido volteada durante la partida actual. */
+  flipCount: number;
 }

@@ -88,7 +88,7 @@ export class GameService {
 
     // Voltear la carta (inmutablemente)
     this.cards.update(prev =>
-      prev.map(c => c.id === cardId ? { ...c, flipped: true } : c)
+      prev.map(c => c.id === cardId ? { ...c, flipped: true, flipCount: c.flipCount + 1 } : c)
     );
 
     // Agregar a flippedIds
